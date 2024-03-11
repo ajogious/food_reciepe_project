@@ -1,0 +1,52 @@
+{ 
+    margin: 0;
+    padding: 0:
+    box-sizing:border-box;
+}
+
+.container{
+    width: 75px;%;
+    margin: 50px auto;
+}
+
+.image{
+    width:98%;
+   
+}
+
+#image{
+    width: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+
+}
+
+
+/* showcas-header start */
+.showcase-header h1{
+    font-size: 70px;
+color: hsl(24/5%,18%);
+}
+
+p{
+    font-size: 30px;
+    line-height: 40px;
+    color: hsl(30,10%34%);
+}
+.showcase-main{
+background-color: hsl(330, 100%, 98%);
+padding: 20px 0 20px 60px;
+border-radius: 20px;
+
+}
+.showcase-main h4 {
+    font-size: 30px;
+    color: hsl(332, 51%, 32%);
+    font-family: serif;
+    margin: 20px 0;
+}
+
+header{ 
+    font-size: ;
+    color: hsl;
+}
