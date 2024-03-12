@@ -1,3 +1,19 @@
+@import url("https://fonts.googleapis.com/css2?family=Young+Serif&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap");
+/* 
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.young-serif-regular {
+  font-family: "Young Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -6,6 +22,11 @@
 
 body {
   background-color: hsl(337, 48%, 95%);
+  scroll-behavior: smooth;
+}
+
+section {
+  margin: 30px 0;
 }
 
 .wrapper {
@@ -35,15 +56,21 @@ body {
 /* showcas-header start */
 .showcas-header h1 {
   font-size: 40px;
-  color: hsl(24/5%, 18%);
+  color: hsl(24, 5%, 18%);
   margin-top: 30px;
+  font-family: "Young Serif", serif;
 }
 
 p {
   font-size: 21px;
-  color: hsl(30, 10%34%);
   line-height: 1.6;
   margin: 20px 0;
+}
+
+p,
+li {
+  color: hsl(24, 5%, 18%);
+  font-family: "Outfit", sans-serif;
 }
 .showcase-main {
   background-color: hsl(337, 48%, 95%);
@@ -63,12 +90,14 @@ p {
   margin-top: 15px;
 }
 
-.showcase-main ul li {
+.showcase-main ul li,
+.show-instruction ol li {
   margin: 10px 0;
   font-size: 16;
 }
 
-.showcase-main ul li strong {
+.showcase-main ul li strong,
+.show-instruction ol li {
   margin-left: 20px;
 }
 
@@ -79,14 +108,41 @@ li::marker {
 .ingredients h1,
 .instruction h1,
 .nutrition h1 {
-  color: hsl(332, 51%, 32%);
+  color: hsl(14, 45%, 36%);
   text-transform: capitalize;
   margin: 20px 0;
+  font-size: 30px;
 }
 
 .ingredients ul {
   margin-left: 25px;
 }
 
-.ingredients ul li::marker {
+.show-ingredients ul li {
+  padding-left: 10px;
+  margin: 10px 0;
+}
+
+.show-instruction li {
+  line-height: 1.6;
+}
+
+.nutrition-list ul {
+  display: flex;
+  justify-content: space-between;
+  width: 50%;
+}
+
+p {
+  font-size: 16px;
+}
+
+.nutrition-list ul li {
+  margin: 15px 0;
+  list-style: none;
+}
+
+hr {
+  height: 2px;
+  background: red;
 }
