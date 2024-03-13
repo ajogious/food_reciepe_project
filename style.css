@@ -32,7 +32,7 @@ section {
 .wrapper {
   background-color: white;
   max-width: 1440px;
-  width: 70%;
+  width: 55%;
   margin: 100px auto;
   padding: 30px;
   border-radius: 20px;
@@ -55,14 +55,14 @@ section {
 
 /* showcas-header start */
 .showcas-header h1 {
-  font-size: 40px;
+  font-size: 37px;
   color: hsl(24, 5%, 18%);
   margin-top: 30px;
   font-family: "Young Serif", serif;
 }
 
 p {
-  font-size: 21px;
+  font-size: 16px;
   line-height: 1.6;
   margin: 20px 0;
 }
@@ -71,7 +71,9 @@ p,
 li {
   color: hsl(24, 5%, 18%);
   font-family: "Outfit", sans-serif;
+  font-weight: 500;
 }
+
 .showcase-main {
   background-color: hsl(337, 48%, 95%);
   padding: 30px 40px;
@@ -82,17 +84,16 @@ li {
 .showcase-main h4 {
   font-size: 20px;
   color: hsl(332, 51%, 32%);
-  font-family: serif;
+  font-family: "Outfit", sans-serif;
+  font-weight: 600;
 }
 
 .showcase-main ul {
   margin-left: 20px;
-  margin-top: 15px;
 }
 
 .showcase-main ul li,
 .show-instruction ol li {
-  margin: 10px 0;
   font-size: 16;
 }
 
@@ -102,16 +103,18 @@ li {
 }
 
 li::marker {
-  color: hsl(332, 51%, 32%);
+  color: hsl(331, 30%, 18%);
+  font-weight: bold;
 }
 
 .ingredients h1,
 .instruction h1,
 .nutrition h1 {
-  color: hsl(14, 45%, 36%);
+  color: hsl(331, 30%, 18%);
   text-transform: capitalize;
-  margin: 20px 0;
-  font-size: 30px;
+  margin: 10px 0;
+  font-size: 25px;
+  font-family: "Young Serif", serif;
 }
 
 .ingredients ul {
@@ -120,17 +123,22 @@ li::marker {
 
 .show-ingredients ul li {
   padding-left: 10px;
-  margin: 10px 0;
 }
 
 .show-instruction li {
   line-height: 1.6;
+  margin: 10px 0;
 }
 
 .nutrition-list ul {
   display: flex;
   justify-content: space-between;
-  width: 50%;
+  width: 60%;
+}
+
+.nutrition-list ul li:last-child {
+  color: hsl(331, 30%, 18%);
+  font-weight: bold;
 }
 
 p {
@@ -144,5 +152,49 @@ p {
 
 hr {
   height: 2px;
-  background: red;
+  background-color: hsl(30, 18%, 87%);
+}
+
+@media (max-width: 920px) {
+  .wrapper {
+    width: 70%;
+  }
+  .showcas-header h1 {
+    font-size: 33px;
+  }
+}
+
+@media (max-width: 660px) {
+  .wrapper {
+    width: 100%;
+    border-radius: 0;
+  }
+
+  .container {
+    width: 88%;
+  }
+
+  .showcas-header h1 {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 520px) {
+  .showcas-header h1 {
+    font-size: 25px;
+  }
+
+  .showcase-main ul li {
+    font-size: 16;
+  }
+
+  .nutrition-list ul {
+    width: 80%;
+  }
+}
+
+@media (max-width: 440px) {
+  .showcas-header h1 {
+    font-size: 30px;
+  }
 }
